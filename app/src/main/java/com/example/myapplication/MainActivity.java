@@ -7,18 +7,17 @@ import android.widget.Button;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+    }
 
     final TextView ballCount_display = (TextView) findViewById(R.id.ball_display);
     final TextView strikeCount_display = (TextView) findViewById(R.id.strike_display);
 
     int strike_int = 0;
     int ball_int = 0;
-
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-    }
 
     public void push_ball (android.view.View v){
         ball_int++;
@@ -38,6 +37,4 @@ public class MainActivity extends AppCompatActivity {
         ballCount_display.setText(Integer.toString(ball_int));
         strikeCount_display.setText(Integer.toString(strike_int));
     }
-
-
 }
