@@ -1,4 +1,4 @@
-package com.example.lab_1_umpire_buddy;
+package com.example.myapplication;
 
 import org.junit.Test;
 

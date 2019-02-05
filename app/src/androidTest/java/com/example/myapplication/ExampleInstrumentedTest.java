@@ -1,4 +1,4 @@
-package com.example.lab_1_umpire_buddy;
+package com.example.myapplication;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("com.example.lab_1_umpire_buddy", appContext.getPackageName());
+        assertEquals("com.example.myapplication", appContext.getPackageName());
     }
 }
