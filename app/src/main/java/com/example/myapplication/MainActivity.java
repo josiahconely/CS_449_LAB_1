@@ -7,18 +7,16 @@ import android.widget.Button;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
-
-    static int strike_int = 0;
-    static int ball_int = 0;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
 
-    public void push_ball(View v){
+    static int strike_int = 0;
+    static int ball_int = 0;
 
+    public void push_ball(View v){
         ball_int++;
         if (ball_int > 3) {
             ball_int = 0;
@@ -40,6 +38,4 @@ public class MainActivity extends AppCompatActivity {
         ballCount_display.setText(Integer.toString(ball_int));
         strikeCount_display.setText(Integer.toString(strike_int));
     }
-
-
 }
