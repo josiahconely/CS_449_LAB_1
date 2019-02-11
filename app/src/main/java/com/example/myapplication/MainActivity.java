@@ -159,3 +159,7 @@ public class MainActivity extends AppCompatActivity {
         editor.commit();
     }
 }
+
+
+
+//android:icon="@android:drawable/ic_menu_rotate"
